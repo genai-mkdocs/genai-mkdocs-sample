@@ -9,8 +9,8 @@
     "mkdocs:build": "uv run mkdocs build",
     "mkdocs:build:svg": "node scripts/mkdocs-svg.mjs",
     "mkdocs:pdf": "node scripts/mkdocs-pdf.mjs",
-    "lint:text": "textlint \"**/*.md\"",
-    "lint:text:fix": "textlint --fix \"**/*.md\""
+    "lint:text": "textlint README.md \"docs/**/*.md\"",
+    "lint:text:fix": "textlint --fix README.md \"docs/**/*.md\""
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4.2.3",
