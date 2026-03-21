@@ -1,6 +1,7 @@
 # User-specific ignores
 sitecustomize.py
 /docs/assets/
+.pnpm-store/
 
 # Claude Code
 .claude/settings.local.json

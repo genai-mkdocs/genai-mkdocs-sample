@@ -24,6 +24,30 @@
     - **Azure Static Web Apps (SWA)**： 開発・プレビュー用。Pull Request 時にプレビュー環境を自動生成。GitHub ActionsによるGitHubとSWAの権限の自動同期を提供（オプション）
 - 静的サイト全体を1つのPDFにまとめて配布可能
 
+## 開発環境のセットアップ
+
+### DevContainer（推奨）
+
+VS Code の [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) 拡張機能を使うと、環境構築なしにすぐ開発を始められる。
+
+**前提条件：** Docker、VS Code、Dev Containers 拡張機能
+
+1. このリポジトリをクローン
+2. VS Code でフォルダを開く
+3. 右下の通知、またはコマンドパレット（`Ctrl+Shift+P`）から **「Reopen in Container」** を選択
+4. 初回のみコンテナのビルドが実行される（10〜15分程度）
+
+コンテナ起動後、ターミナルで以下のコマンドが利用できる：
+
+| コマンド | 内容 |
+|----------|------|
+| `pnpm mkdocs` | ライブプレビューサーバーを起動（http://localhost:8000） |
+| `pnpm mkdocs:build` | 静的サイトをビルド |
+| `pnpm mkdocs:build:svg` | Mermaid 図を SVG にレンダリング |
+| `pnpm mkdocs:pdf` | PDF を生成 |
+| `pnpm lint:text` | textlint でドキュメントを検査 |
+| `pnpm lint:text:fix` | textlint で自動修正 |
+
 ## 技術スタック
 
 | 技術 | 用途 |
