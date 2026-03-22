@@ -8,7 +8,7 @@
     "mkdocs": "uv run mkdocs serve --livereload",
     "mkdocs:build": "uv run mkdocs build",
     "mkdocs:build:svg": "node scripts/mkdocs-svg.mjs",
-    "mkdocs:pdf": "node scripts/mkdocs-pdf.mjs",
+    "mkdocs:build:pdf": "node scripts/mkdocs-pdf.mjs",
     "lint:text": "textlint README.md \"docs/**/*.md\"",
     "lint:text:fix": "textlint --fix README.md \"docs/**/*.md\""
   },
